@@ -1,0 +1,326 @@
+<!doctype html>
+      <html lang="id">
+      <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0812">
+  <meta name="description" content="Portofolio pribadi Aditya Dwi Satryo — Information Technology Enthusiast: Network Engineering, Junior Cyber Security, IT Support, dan Junior Front-End Developer.">
+  <title>Aditya Dwi Satryo — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+        </head>
+<body class="is-loading">
+  <div class="preloader" id="preloader" aria-label="Loading portfolio">
+    <div class="loader-core"><span class="loader-orbit orbit-a"></span><span class="loader-orbit orbit-b"></span><span class="loader-mark">&lt;/&gt;</span></div>
+    <p class="loader-brand">INITIALIZING PORTFOLIO<span>_</span></p>
+    <div class="loader-track"><i id="loader-progress"></i></div>
+    <div class="loader-meta"><span>LOADING ASSETS</span><strong id="loader-percent">01%</strong></div>
+    <div class="loader-log" id="loader-log" aria-hidden="true"></div>
+    <div class="loader-code">SYS.BOOT // UI_CORE // 2026</div>
+  </div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="ambient-glow glow-left"></div>
+  <div class="ambient-glow glow-right"></div>
+  <div class="grid-bg"></div>
+  <canvas class="it-canvas" id="it-canvas" aria-hidden="true"></canvas>
+  <div class="it-floaters" id="it-floaters" aria-hidden="true"></div>
+  <div class="scan-beam" aria-hidden="true"></div>
+  <svg class="circuit circuit-l" viewBox="0 0 120 1000" preserveAspectRatio="none" aria-hidden="true">
+    <g class="c-base"><path d="M0 80H40L62 102V260L40 282H0"/><path d="M0 400H28L50 422V610L72 632H120"/><path d="M0 720H34L58 744V900"/><circle cx="62" cy="180" r="3"/><circle cx="50" cy="520" r="3"/><circle cx="58" cy="820" r="3"/></g>
+    <g class="c-pulse"><path pathLength="100" style="--d:7s;--o:0s" d="M0 80H40L62 102V260L40 282H0"/><path pathLength="100" style="--d:9s;--o:-3s" d="M0 400H28L50 422V610L72 632H120"/><path pathLength="100" style="--d:8s;--o:-5s" d="M0 720H34L58 744V900"/></g>
+  </svg>
+  <svg class="circuit circuit-r" viewBox="0 0 120 1000" preserveAspectRatio="none" aria-hidden="true">
+    <g class="c-base"><path d="M120 150H84L62 172V340L84 362H120"/><path d="M120 480H92L70 502V700L48 722H0"/><path d="M120 800H86L64 822V980"/><circle cx="62" cy="250" r="3"/><circle cx="70" cy="600" r="3"/><circle cx="64" cy="900" r="3"/></g>
+    <g class="c-pulse"><path pathLength="100" style="--d:8s;--o:-1s" d="M120 150H84L62 172V340L84 362H120"/><path pathLength="100" style="--d:10s;--o:-4s" d="M120 480H92L70 502V700L48 722H0"/><path pathLength="100" style="--d:7s;--o:-6s" d="M120 800H86L64 822V980"/></g>
+  </svg>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#home">satryotech<span>.dev</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About Me</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#certificates">Certificates</a>
+      <a class="nav-link" href="#documentation">Documentation</a>
+      <a class="nav-link" href="#resume">CV / Resume</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-section" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse"></span> WELCOME TO MY PERSONAL PORTFOLIO</div>
+        <h1>Aditya<br><span>Dwi Satryo</span></h1>
+        <p class="role"><span id="role-text">Information Technology Enthusiast</span><span class="typing-caret">_</span></p>
+        <p class="intro">Selamat datang di portofolio pribadi saya. Saya pelajar Teknik Komputer dan Jaringan (TKJ) di SMK Negeri 1 Cibinong yang fokus mengembangkan diri di bidang Information Technology.</p>
+        <div class="tech-pills"><span>NETWORK</span><span>CYBER SECURITY</span><span>IT SUPPORT</span><span>FRONT-END</span></div>
+        <div class="hero-notes"><span>↳ Explore my work below</span><span>↳ Keep learning, keep growing, keep innovating</span></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="id-hud hud-top">IDENTITY VERIFIED <i></i><small>ST-IT-26001</small></div>
+        <div class="orbit-ring" aria-hidden="true"><i></i></div><div class="orbit-ring orbit-ring-2" aria-hidden="true"><i></i></div>
+        <div class="idc-world" id="idc-world">
+          <svg class="idc-rope" id="idc-rope" aria-hidden="true">
+            <defs><linearGradient id="ropeFade" gradientUnits="userSpaceOnUse" x1="0" y1="-230" x2="0" y2="-20"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="ropeMask" maskUnits="userSpaceOnUse" x="-2000" y="-600" width="4000" height="3000"><rect x="-2000" y="-600" width="4000" height="3000" fill="url(#ropeFade)"/></mask></defs>
+            <g id="rope-g" mask="url(#ropeMask)">
+              <path id="rope-hit" fill="none" stroke="transparent" stroke-width="34" pointer-events="stroke"/><path id="rope-edge" fill="none"/><path id="rope-fill" fill="none"/><path id="rope-stitch" fill="none"/>
+            </g>
+          </svg>
+          <div class="idc-hang" id="idc-hang">
+            <svg class="idc-clip" viewBox="0 0 60 90" width="60" height="90" aria-hidden="true">
+              <defs><linearGradient id="idcMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f4f4"/><stop offset=".5" stop-color="#8a8a8a"/><stop offset="1" stop-color="#d9d9d9"/></linearGradient></defs>
+              <path d="M30 3 L53 32 L7 32 Z" fill="none" stroke="url(#idcMetal)" stroke-width="4.5" stroke-linejoin="round"/>
+              <rect x="24" y="31" width="12" height="11" rx="3" fill="url(#idcMetal)" stroke="#666" stroke-width=".6"/>
+              <rect x="21" y="41" width="18" height="7" rx="3" fill="#6f6f6f"/>
+              <rect x="19" y="47" width="22" height="38" rx="11" fill="none" stroke="url(#idcMetal)" stroke-width="4.5"/>
+              <rect x="26" y="45" width="8" height="5" rx="2" fill="#bbb"/>
+            </svg>
+            <div class="idc-card" id="idc-card" tabindex="0" role="button" aria-label="ID card interaktif. Tarik kartu atau tali untuk menggerakkan, klik atau tekan Enter untuk membalik.">
+              <div class="idc-face idc-front">
+                <svg class="idc-art" viewBox="0 0 270 420" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="idcBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ece8f7"/><stop offset="1" stop-color="#cdc7e0"/></linearGradient>
+                    <pattern id="idcGrid" width="13" height="13" patternUnits="userSpaceOnUse"><path d="M0 0H13M0 0V13" fill="none" stroke="#1a1233" stroke-opacity=".09" stroke-width=".8"/></pattern>
+                  </defs>
+                  <rect width="270" height="420" fill="url(#idcBg)"/>
+                  <polygon points="70,420 270,205 270,420" fill="url(#idcGrid)"/>
+                  <path d="M201 -4 L244 120 A116 116 0 0 1 135 276 L-5 276" fill="none" stroke="#1a1233" stroke-width="28"/>
+                  <rect x="105" y="9" width="60" height="14" rx="7" fill="#b9b3cc" stroke="#8a8399"/>
+                  <rect x="0" y="405" width="270" height="15" fill="#1a1233"/>
+                </svg>
+                <div class="idc-photo"><img src="assets/activity-photo.jpeg" alt="Foto 1"></div>
+                <h3 class="idc-name">Aditya Dwi Satryo</h3>
+                <p class="idc-role">Information Technology Enthusiast</p>
+                <div class="idc-idnum"><b>ID NUMBER</b><span>ST-IT-26001</span></div>
+                <svg class="idc-barcode" data-seed="7" viewBox="0 0 190 24" preserveAspectRatio="none" aria-hidden="true"></svg>
+              </div>
+              <div class="idc-face idc-back">
+                <svg class="idc-art" viewBox="0 0 270 420" aria-hidden="true">
+                  <rect width="270" height="420" fill="url(#idcBg)"/>
+                  <polygon points="0,420 0,225 200,420" fill="url(#idcGrid)"/>
+                  <circle cx="270" cy="0" r="150" fill="none" stroke="#1a1233" stroke-width="34"/>
+                  <rect x="105" y="9" width="60" height="14" rx="7" fill="#b9b3cc" stroke="#8a8399"/>
+                  <rect x="0" y="405" width="270" height="15" fill="#1a1233"/>
+                </svg>
+                <p class="idc-b-label">SATRYO TECH</p>
+                <h3 class="idc-b-title">DIGITAL<br><span>IDENTITY</span></h3>
+                <p class="idc-b-text">Siswa X TKJ 1 SMK Negeri 1 Cibinong. Network Engineering, Junior Cyber Security, Software &amp; Hardware Engineering, IT Support, dan Junior Front-End Developer. Never stop learning.</p>
+                <svg class="idc-barcode idc-barcode-b" data-seed="23" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <div class="idc-sign"><em>Aditya D.S.</em><small>Signature</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="id-hud hud-bottom">LATENCY <b id="hud-latency">12ms</b><small>DESIGN SYSTEM ONLINE</small></div>
+        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
+        <div class="art-index">FIG. 001 — INTRODUCTION</div>
+      </div>
+      <a href="#about" class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>NETWORK ENGINEERING</span><b>◆</b><span>JUNIOR CYBER SECURITY</span><b>◆</b><span>SOFTWARE & HARDWARE</span><b>◆</b><span>IT SUPPORT</span><b>◆</b><span>FRONT-END</span><b>◆</b><span>HTML</span><b>◆</b><span>CSS</span><b>◆</b><span>JAVASCRIPT</span><b>◆</b><span>PHP</span><b>◆</b><span>PYTHON</span><b>◆</b><span>JAVA</span><b>◆</b><span>TKJ SMKN 1 CIBINONG</span><b>◆</b><span>NETWORK ENGINEERING</span><b>◆</b><span>JUNIOR CYBER SECURITY</span><b>◆</b><span>SOFTWARE & HARDWARE</span><b>◆</b><span>IT SUPPORT</span><b>◆</b><span>FRONT-END</span><b>◆</b><span>HTML</span><b>◆</b><span>CSS</span><b>◆</b><span>JAVASCRIPT</span><b>◆</b><span>PHP</span><b>◆</b><span>PYTHON</span><b>◆</b><span>JAVA</span><b>◆</b><span>TKJ SMKN 1 CIBINONG</span><b>◆</b></div></div>
+
+    <section class="about page-section" id="about">
+      <div class="section-kicker"><span>01 / ABOUT ME</span><i></i></div>
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p class="mini-label">WHO AM I?</p>
+          <h2>Aditya Dwi<br><span>Satryo.</span></h2>
+          <p class="about-text">Saya siswa kelas X TKJ 1 di SMK Negeri 1 Cibinong dengan ketertarikan besar pada dunia teknologi informasi. Saya terus mengembangkan pengetahuan dan keterampilan melalui pembelajaran mandiri, praktik, dan pengalaman langsung, mulai dari Network Engineering, Cyber Security, Software &amp; Hardware Engineering, IT Support, hingga Front-End Development.</p>
+          <p class="about-text">Bagi saya, teknologi bukan hanya tentang penggunaan perangkat, tetapi juga tentang bagaimana memahami, mengembangkan, memelihara, dan menciptakan solusi melalui teknologi.</p>
+          <blockquote>“Technology is not just about using it, but understanding how to create and improve it.”</blockquote>
+          <ul class="info-list">
+            <li><span>FULL NAME</span>Aditya Dwi Satryo</li><li><span>OCCUPATION</span>Student</li>
+            <li><span>SCHOOL</span>SMK Negeri 1 Cibinong</li><li><span>CLASS</span>X TKJ 1</li>
+            <li><span>MAJOR</span>Teknik Komputer dan Jaringan</li><li><span>INTEREST</span>Information Technology</li>
+          </ul>
+          <div class="about-actions">
+            <a class="btn btn-light" href="assets/cv.pdf" download="CV_Aditya_Dwi_Satryo.pdf"><span>↓</span> Download CV</a>
+            <a class="btn btn-outline" href="#projects"><span>↗</span> View Projects</a>
+          </div>
+        </div>
+        <div class="about-photo reveal">
+          <div class="photo-halo"></div>
+          <div class="round-photo"><img src="assets/profile-about.jpeg" alt="Foto 3"></div>
+          <span class="photo-coordinate">06° 29' S<br>106° 51' E</span>
+          <span class="photo-label">PROFILE<br>PORTRAIT — 01</span>
+        </div>
+      </div>
+      <div class="stats-grid reveal">
+        <a class="stat-card" href="#projects"><span class="stat-icon">⌘</span><strong>02</strong><small>PROJECTS</small><b>↗</b></a>
+        <a class="stat-card" href="#certificates"><span class="stat-icon">♙</span><strong>03</strong><small>CERTIFICATES</small><b>↗</b></a>
+        <a class="stat-card" href="#skills"><span class="stat-icon">◎</span><strong>11</strong><small>TECHNOLOGIES</small><b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="block page-section" id="skills">
+      <div class="section-kicker"><span>02 / SKILLS</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">TECHNICAL SKILLS &amp; COMPETENCIES</p>
+        <h2>Skills <span>&amp; Tech Stack</span></h2>
+        <p class="subheading">Bidang yang saya dalami, bahasa pemrograman, dan tools yang saya gunakan.</p>
+      </div>
+      <div class="comp-grid"><article class="comp-card"><small>01</small><h3>Network Engineering</h3><p>Memiliki ketertarikan dan kemampuan dasar dalam memahami konsep jaringan komputer, konfigurasi jaringan, pengalamatan IP, administrasi jaringan, serta pengelolaan infrastruktur jaringan.</p></article><article class="comp-card"><small>02</small><h3>Junior Cyber Security</h3><p>Memiliki ketertarikan dalam bidang keamanan siber, khususnya pemahaman keamanan sistem komputer, keamanan jaringan, identifikasi kerentanan, dan dasar-dasar perlindungan informasi.</p></article><article class="comp-card"><small>03</small><h3>Software &amp; Hardware Engineering</h3><p>Memahami dasar instalasi, konfigurasi, pemeliharaan, perakitan, serta troubleshooting perangkat keras dan perangkat lunak komputer.</p></article><article class="comp-card"><small>04</small><h3>IT Support</h3><p>Memiliki pengalaman memberikan dukungan teknis, melakukan pemeriksaan perangkat, menangani permasalahan komputer, serta membantu kebutuhan teknologi informasi di lingkungan pendidikan.</p></article><article class="comp-card"><small>05</small><h3>Junior Front-End Developer</h3><p>Memiliki ketertarikan dalam pengembangan website, khususnya pembuatan antarmuka pengguna (User Interface), struktur halaman web, serta pengembangan tampilan website.</p></article></div>
+      <div class="sub-title reveal"><span>TECH STACK</span><i></i></div>
+      <div class="tech-grid reveal"><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M5 4l2 21 9 3 9-3 2-21z"/><path d="M11 10h10l-.6 7H12l.4 4 3.6 1 3.6-1"/></svg></span><div class="tech-info"><b>HTML</b><small>87%</small><em class="bar"><i style="--v:87%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M5 4l2 21 9 3 9-3 2-21z"/><path d="M21 10H11l.4 4h9l-.8 6-3.6 1-3.6-1"/></svg></span><div class="tech-info"><b>CSS</b><small>85%</small><em class="bar"><i style="--v:85%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="3"/><path d="M15 12v8a2.5 2.5 0 0 1-4.5 1.5M21 15c-1.8-1.6-3.8-.6-3.5.9.3 1.8 3.8 1.2 3.7 3.2-.1 1.7-2.6 2.2-4 .6"/></svg></span><div class="tech-info"><b>JavaScript</b><small>75%</small><em class="bar"><i style="--v:75%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="16" rx="13" ry="8"/><path d="M8 19v-6h2.6a1.9 1.9 0 0 1 0 3.8H8M13.5 19v-6M13.5 15h2.3a1.9 1.9 0 0 0 0-2H13.5M18 19v-6M18 15h2.3a1.9 1.9 0 0 0 0-2H18"/></svg></span><div class="tech-info"><b>PHP</b><small>65%</small><em class="bar"><i style="--v:65%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M7 15h15v5a5 5 0 0 1-5 5h-5a5 5 0 0 1-5-5z"/><path d="M22 16h2.5a2.5 2.5 0 0 1 0 5H21.5"/><path d="M11 5c-2 2 2 3 0 6M16 5c-2 2 2 3 0 6M21 5c-2 2 2 3 0 6M8 28h16"/></svg></span><div class="tech-info"><b>Java</b><small>80%</small><em class="bar"><i style="--v:80%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M16 4c-5 0-5 2-5 4v3h7v2H8c-3 0-4 2-4 5s1 5 4 5h2v-3c0-2 2-4 4-4h6c2 0 3-1 3-3V8c0-2-3-4-7-4z"/><path d="M16 28c5 0 5-2 5-4v-3h-7v-2h10c3 0 4-2 4-5s-1-5-4-5h-2v3c0 2-2 4-4 4h-6c-2 0-3 1-3 3v6c0 2 3 4 7 4z"/><path d="M13 8h.01M19 24h.01"/></svg></span><div class="tech-info"><b>Python</b><small>70%</small><em class="bar"><i style="--v:70%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="3"/><path d="M10.5 10.5a7.8 7.8 0 0 0 0 11M21.5 10.5a7.8 7.8 0 0 1 0 11M6.5 6.5a13.5 13.5 0 0 0 0 19M25.5 6.5a13.5 13.5 0 0 1 0 19"/></svg></span><div class="tech-info"><b>Live Server</b><small>DEV TOOL</small><em class="bar live"><i></i></em></div></div></div>
+      <div class="sub-title reveal"><span>AI TOOLS</span><i></i></div>
+      <div class="tech-grid tech-grid-ai reveal"><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><g transform="translate(16 16)"><ellipse rx="5.5" ry="11" transform="rotate(0)"/><ellipse rx="5.5" ry="11" transform="rotate(60)"/><ellipse rx="5.5" ry="11" transform="rotate(120)"/></g></svg></span><div class="tech-info"><b>ChatGPT AI</b><small>90%</small><em class="bar"><i style="--v:90%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M16 2c0 8 6 14 14 14-8 0-14 6-14 14 0-8-6-14-14-14 8 0 14-6 14-14z"/></svg></span><div class="tech-info"><b>Gemini AI</b><small>85%</small><em class="bar"><i style="--v:85%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><g transform="translate(16 16)" stroke-linecap="round"><path d="M0-13V13M-13 0H13M-9.2-9.2L9.2 9.2M9.2-9.2L-9.2 9.2"/><path d="M-4.6-12L4.6 12M4.6-12L-4.6 12M-12-4.6L12 4.6M12-4.6L-12 4.6" opacity=".6"/></g></svg></span><div class="tech-info"><b>Claude AI</b><small>90%</small><em class="bar"><i style="--v:90%"></i></em></div></div><div class="tech-item"><span class="tech-ico"><svg viewBox="0 0 32 32"><path d="M16 3l11 6.3v12.4L16 28 5 21.7V9.3z"/><path d="M5 9.3l11 6.4 11-6.4M16 15.7V28"/></svg></span><div class="tech-info"><b>Blackbox AI</b><small>92%</small><em class="bar"><i style="--v:92%"></i></em></div></div></div>
+    </section>
+
+    <section class="block page-section" id="projects">
+      <div class="section-kicker"><span>03 / PROJECTS</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">MY PROJECTS &amp; DEVELOPMENT</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p class="subheading">Proyek berbasis website yang saya kembangkan.</p>
+      </div>
+      <article class="proj-feature">
+        <div class="proj-info">
+          <span class="proj-no">01 — LEARNING PLATFORM</span>
+          <h3>TKJ Learning Hub</h3>
+          <p>Platform pembelajaran digital yang dirancang untuk mendukung proses belajar siswa Teknik Komputer dan Jaringan, dengan materi pembelajaran berbasis website. Dikembangkan menggunakan HTML, CSS, dan JavaScript.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></div>
+          <a class="btn btn-light" href="https://satryotech.github.io/learning_hub_tkj/" target="_blank" rel="noopener"><span>↗</span> Visit Project</a>
+        </div>
+        <div class="shot-frame"><div class="shot-bar"><span class="browser-dots"><i></i><i></i><i></i></span><em>satryotech.github.io/learning_hub_tkj</em></div><div class="shot-stage"><img src="assets/project-learning-hub-1.png" alt="Screenshot tkj-1" loading="lazy" data-zoom class="on"><img src="assets/project-learning-hub-2.png" alt="Screenshot tkj-2" loading="lazy" data-zoom class=""><img src="assets/project-learning-hub-3.png" alt="Screenshot tkj-3" loading="lazy" data-zoom class=""></div><div class="shot-dots"><i class="on"></i><i class=""></i><i class=""></i></div></div>
+      </article>
+      <article class="proj-feature proj-rev">
+        <div class="proj-info">
+          <span class="proj-no">02 — ACCESSIBILITY / MEDIA</span>
+          <h3>BISINDO — Penerjemah Bahasa</h3>
+          <p>Proyek pengembangan media berbasis teknologi yang berfokus pada penerjemahan Bahasa Isyarat Indonesia (BISINDO), sebagai upaya memanfaatkan teknologi untuk mendukung komunikasi dan aksesibilitas.</p>
+          <div class="tags"><span>WEB</span><span>CAMERA</span><span>ACCESSIBILITY</span></div>
+          <a class="btn btn-light" href="https://satryotech.github.io/BISINDO---Penerjemah-Bahasa--/" target="_blank" rel="noopener"><span>↗</span> Visit Project</a>
+        </div>
+        <div class="shot-frame"><div class="shot-bar"><span class="browser-dots"><i></i><i></i><i></i></span><em>satryotech.github.io/BISINDO---Penerjemah-Bahasa--</em></div><div class="shot-stage"><img src="assets/project-bisindo-1.png" alt="Screenshot bisindo-1" loading="lazy" data-zoom class="on"><img src="assets/project-bisindo-2.png" alt="Screenshot bisindo-2" loading="lazy" data-zoom class=""></div><div class="shot-dots"><i class="on"></i><i class=""></i></div></div>
+      </article>
+    </section>
+
+    <section class="block page-section" id="experience">
+      <div class="section-kicker"><span>04 / EXPERIENCE</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">MY JOURNEY SO FAR</p>
+        <h2>Work <span>Experience</span></h2>
+        <p class="subheading">Pengalaman IT Support di lingkungan pendidikan.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-line" aria-hidden="true"></div>
+        <article class="tl-item reveal"><span class="tl-dot"></span><small>IT SUPPORT</small><h3>IT Support — SMP Islam Arrohman</h3><p>Membantu kegiatan operasional dan kebutuhan teknis teknologi informasi di lingkungan SMP Islam Arrohman, termasuk penyiapan 25 unit PC di laboratorium komputer.</p>
+          <ul class="tl-list"><li>Melakukan pemeriksaan dan troubleshooting perangkat komputer.</li><li>Membantu perbaikan dan konfigurasi Personal Computer (PC).</li><li>Menyiapkan perangkat komputer untuk Tes Kemampuan Akademik (TKA).</li><li>Membantu persiapan serta konfigurasi komputer untuk Asesmen Nasional Berbasis Komputer (ANBK).</li><li>Mendukung ketersediaan perangkat komputer untuk kegiatan pembelajaran.</li></ul>
+          <div class="tl-mentor"><span>MENTOR &amp; SUPERVISOR</span>Fatikh Sadewo, S.Kom.</div>
+          <div class="tags"><span>TROUBLESHOOTING</span><span>PC SETUP</span><span>TKA</span><span>ANBK</span></div></article>
+        <article class="tl-item reveal"><span class="tl-dot"></span><small>IT SUPPORT</small><h3>IT Support — SD Islam Arrohman</h3><p>Pengalaman membantu kebutuhan teknis teknologi informasi dan dukungan perangkat komputer di lingkungan pendidikan.</p><div class="tags"><span>TECHNICAL SUPPORT</span><span>HARDWARE</span></div></article>
+      </div>
+    </section>
+
+    <section class="block page-section" id="education">
+      <div class="section-kicker"><span>05 / EDUCATION</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">EDUCATION &amp; PERSONAL MOTIVATION</p>
+        <h2>My Educational <span>Journey</span></h2>
+        <p class="subheading">Bagi saya, pendidikan adalah perjalanan membangun pengetahuan, karakter, dan kemampuan untuk masa depan.</p>
+      </div>
+      <div class="edu-grid edu-grid-4">
+        <article class="edu-card edu-main"><span class="edu-icon">◈</span><small>DITERIMA 08 JUNI 2026 · AKTIF</small><h3>SMK Negeri 1 Cibinong</h3><p>Program Keahlian Teknik Komputer dan Jaringan (TKJ), Kelas X TKJ 1.</p></article>
+        <article class="edu-card"><span class="edu-icon">⌘</span><small>LULUS 25 JUNI 2026</small><h3>SMP Islam Arrohman</h3><p>Sekolah Menengah Pertama.</p></article>
+        <article class="edu-card"><span class="edu-icon">◎</span><small>LULUS 24 JUNI 2023</small><h3>SD Islam Arrohman</h3><p>Sekolah Dasar.</p></article>
+        <article class="edu-card"><span class="edu-icon">✦</span><small>LULUS 23 JUNI 2017</small><h3>RA Arrohman</h3><p>Raudhatul Athfal.</p></article>
+      </div>
+      <div class="sub-title reveal"><span>MY PRINCIPLES</span><i></i></div>
+      <div class="princ-grid"><article class="princ-card"><span>01</span><h4>Never Stop Learning</h4><p>Jangan pernah berhenti belajar, karena ilmu pengetahuan dan teknologi selalu berkembang.</p></article><article class="princ-card"><span>02</span><h4>Consistency is the Key</h4><p>Kemampuan tidak dibangun dalam satu malam, melainkan melalui proses, latihan, dan konsistensi.</p></article><article class="princ-card"><span>03</span><h4>Learn from Mistakes</h4><p>Kesalahan bukan akhir dari perjalanan, melainkan kesempatan untuk memperbaiki diri dan menjadi lebih baik.</p></article><article class="princ-card"><span>04</span><h4>Think, Learn, and Innovate</h4><p>Berpikir kritis, terus belajar, dan menciptakan inovasi merupakan bagian penting dari perkembangan diri.</p></article></div>
+      <blockquote class="motivation reveal"><small>PERSONAL MOTIVATION</small>“Saya tidak harus menjadi yang paling hebat hari ini, tetapi saya harus terus berusaha menjadi lebih baik dari diri saya yang kemarin. Karena masa depan tidak dibangun hanya dengan impian, melainkan dengan pengetahuan, kerja keras, pengalaman, dan keberanian untuk terus berkembang.”</blockquote>
+      <div class="vision reveal"><span>MY VISION</span><p>Menjadi individu yang kompeten, berintegritas, dan mampu memberikan kontribusi nyata melalui pemanfaatan serta pengembangan teknologi informasi.</p></div>
+    </section>
+
+    <section class="block page-section" id="certificates">
+      <div class="section-kicker"><span>06 / CERTIFICATES</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">CERTIFICATIONS &amp; ACHIEVEMENTS</p>
+        <h2>Certificates <span>&amp; Awards</span></h2>
+        <p class="subheading">Sertifikat dan bukti pencapaian kompetensi yang pernah saya raih. Klik untuk memperbesar.</p>
+      </div>
+      <div class="cert-gallery">
+        <figure class="cert-card cert-portrait"><img src="assets/certificate-cyber-academy.jpeg" alt="Surat Keterangan Kelulusan Cyber Academy Indonesia" loading="lazy" data-zoom><figcaption><b>Surat Keterangan Kelulusan</b><span>Cyber Academy Indonesia · 14 Okt 2026</span></figcaption></figure>
+        <figure class="cert-card"><img src="assets/certificate-android-pentester.jpeg" alt="Certificate of Competence Android Penetration Tester" loading="lazy" data-zoom><figcaption><b>Certificate of Competence</b><span>Android Penetration Tester · 14 Okt 2026</span></figcaption></figure>
+        <figure class="cert-card"><img src="assets/certificate-gemini.jpeg" alt="Gemini Certified Student K12 Google for Education" loading="lazy" data-zoom><figcaption><b>Gemini Certified Student (K12)</b><span>Google for Education · 11 Jul 2026</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="block page-section" id="documentation">
+      <div class="section-kicker"><span>07 / DOCUMENTATION</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">ACTIVITIES &amp; DOCUMENTATION</p>
+        <h2>Activities <span>&amp; Documentation</span></h2>
+        <p class="subheading">Dokumentasi visual kegiatan, praktik, dan pengalaman saya di dunia teknologi informasi.</p>
+      </div>
+      <div class="doc-photo-card reveal"><img src="assets/Foto 12.jpeg" alt="Dokumentasi kegiatan Aditya" loading="lazy" data-zoom><div><span class="mini-label">FIELD DOCUMENTATION</span><h3>Aktivitas &amp; Pengalaman</h3><p>Dokumentasi kegiatan dan pengalaman praktik di lingkungan pendidikan.</p></div></div><div class="doc-grid"><div class="doc-card"><span class="doc-icon">IT</span><div><h3>Dokumentasi Kegiatan IT Support</h3><p>Dokumentasi pemeriksaan, perbaikan, dan dukungan teknis perangkat komputer di lingkungan pendidikan.</p><div class="tags"><span>IT SUPPORT</span><span>FOTO MENYUSUL</span></div></div><b>◔</b></div><div class="doc-card"><span class="doc-icon">TKA</span><div><h3>Persiapan Perangkat TKA &amp; ANBK</h3><p>Persiapan dan konfigurasi komputer untuk Tes Kemampuan Akademik dan Asesmen Nasional Berbasis Komputer.</p><div class="tags"><span>TKA</span><span>ANBK</span></div></div><b>◔</b></div><div class="doc-card"><span class="doc-icon">TKJ</span><div><h3>Kegiatan Praktik TKJ</h3><p>Praktik Teknik Komputer dan Jaringan: perakitan, konfigurasi jaringan, dan troubleshooting.</p><div class="tags"><span>NETWORK</span><span>HARDWARE</span></div></div><b>◔</b></div><a class="doc-card" href="https://github.com/satryotech" target="_blank" rel="noopener"><span class="doc-icon">DEV</span><div><h3>Pengembangan Proyek IT</h3><p>Proses pengerjaan dan pengembangan proyek IT, tersedia di GitHub.</p><div class="tags"><span>GITHUB</span><span>WEB</span></div></div><b>↗</b></a><div class="doc-card"><span class="doc-icon">EDU</span><div><h3>Pelatihan &amp; Pengembangan Kompetensi</h3><p>Dokumentasi pelatihan, pembelajaran, dan kegiatan pengembangan kompetensi.</p><div class="tags"><span>TRAINING</span><span>LEARNING</span></div></div><b>◔</b></div></div>
+    </section>
+
+    <section class="block page-section" id="resume">
+      <div class="section-kicker"><span>08 / CV / RESUME</span><i></i></div>
+      <div class="portfolio-heading reveal">
+        <p class="mini-label">CURRICULUM VITAE</p>
+        <h2>CV <span>/ Resume</span></h2>
+        <p class="subheading">Ringkasan profil, pendidikan, pengalaman, skill, dan project dalam satu dokumen.</p>
+      </div>
+      <div class="resume-top reveal">
+        <div class="resume-copy">
+          <p class="mini-label">PROFESSIONAL TITLE</p>
+          <h3>Information Technology Enthusiast</h3>
+          <p>Pelajar kelas X TKJ di SMK Negeri 1 Cibinong dengan pengalaman IT Support di SMP Islam Arrohman serta pengembangan proyek berbasis website. Berminat pada Network Engineering, Junior Cyber Security, Software &amp; Hardware Engineering, IT Support, dan Junior Front-End Development.</p>
+          <ul class="resume-facts"><li><span>FORMAT</span>PDF</li><li><span>PAGES</span>1 (A4)</li><li><span>BRAND</span>SATRYO TECH</li><li><span>ID</span>ST-IT-26001</li></ul>
+          <div class="about-actions">
+            <a class="btn btn-light" href="assets/cv.pdf" download="CV_Aditya_Dwi_Satryo.pdf"><span>↓</span> Download CV (PDF)</a>
+            <a class="btn btn-outline" href="assets/cv.pdf" target="_blank" rel="noopener"><span>↗</span> Open in New Tab</a>
+          </div>
+        </div>
+      </div>
+      <div class="pdf-viewer reveal">
+        <div class="pdf-bar"><span class="browser-dots"><i></i><i></i><i></i></span><em>CV_Aditya_Dwi_Satryo.pdf</em><a href="assets/cv.pdf" target="_blank" rel="noopener">OPEN ↗</a></div>
+        <a class="pdf-page" href="assets/cv.pdf" target="_blank" rel="noopener" aria-label="Buka CV dalam format PDF"><img src="assets/cv-preview.png" alt="Preview CV Aditya Dwi Satryo" loading="lazy"><i class="pdf-scan"></i></a>
+      </div>
+    </section>
+
+    <section class="contact page-section" id="contact">
+      <div class="section-kicker"><span>09 / CONTACT</span><i></i></div>
+      <div class="contact-heading reveal"><h2>Let's Connect<br><span>&amp; Collaborate.</span></h2><p>Saya terbuka untuk membangun relasi, berdiskusi, berbagi pengetahuan, dan berkolaborasi dalam kegiatan maupun proyek yang berkaitan dengan teknologi informasi.</p></div>
+      <div class="contact-layout">
+        <div class="contact-card social-card reveal">
+          <p class="mini-label">SOCIAL MEDIA &amp; CONTACT</p><h3>Find Me Online</h3><p class="form-note">Klik untuk membuka profil. Username Discord akan tersalin otomatis.</p>
+          <a class="social-link" href="https://github.com/satryotech" target="_blank" rel="noopener"><span>GH</span><div><b>GitHub</b><small>github.com/satryotech</small></div><i>↗</i></a>
+          <a class="social-link" href="https://instagram.com/xyroo_317" target="_blank" rel="noopener"><span>IG</span><div><b>Instagram</b><small>@xyroo_317</small></div><i>↗</i></a>
+          <a class="social-link" href="https://www.tiktok.com/@xyrober" target="_blank" rel="noopener"><span>TT</span><div><b>TikTok</b><small>@xyrober</small></div><i>↗</i></a>
+          <button class="social-link" type="button" data-copy="adits_ajah"><span>DC</span><div><b>Discord</b><small>@adits_ajah</small></div><i class="copy-mark">COPY</i></button>
+        </div>
+        <div class="comments-card reveal">
+          <p class="mini-label">COMMUNITY / GUESTBOOK</p><h3>Comments</h3><p class="form-note">Leave your thoughts here.</p>
+          <form id="comment-form">
+            <input name="comment-name" type="text" placeholder="Your Name" required>
+            <textarea name="comment-text" rows="4" placeholder="Your Comment" required></textarea>
+            <label class="upload-label" for="comment-image">↑ &nbsp; Upload Image <span id="file-name">Optional · JPG / PNG</span></label>
+            <input id="comment-image" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+            <div class="image-preview" id="image-preview"></div>
+            <button class="btn btn-muted submit-btn" type="submit">Post Comment <span>↗</span></button>
+          </form>
+          <div class="comment-list" id="comment-list"><p class="empty-comments">No comments yet. Be the first to leave one.</p></div>
+        </div>
+      </div>
+      <div class="thanks reveal"><p class="mini-label">THANK YOU FOR VISITING MY PORTFOLIO</p><h3>Keep Learning. Keep Growing. Keep Innovating.</h3></div>
+    </section>
+
+    <div class="ticker ticker-rev" aria-hidden="true"><div class="ticker-track"><span>KEEP LEARNING</span><b>◆</b><span>KEEP GROWING</span><b>◆</b><span>KEEP INNOVATING</span><b>◆</b><span>BUILDING KNOWLEDGE</span><b>◆</b><span>DEVELOPING TECHNOLOGY</span><b>◆</b><span>CREATING SOLUTIONS</span><b>◆</b><span>KEEP LEARNING</span><b>◆</b><span>KEEP GROWING</span><b>◆</b><span>KEEP INNOVATING</span><b>◆</b><span>BUILDING KNOWLEDGE</span><b>◆</b><span>DEVELOPING TECHNOLOGY</span><b>◆</b><span>CREATING SOLUTIONS</span><b>◆</b><span>KEEP LEARNING</span><b>◆</b><span>KEEP GROWING</span><b>◆</b><span>KEEP INNOVATING</span><b>◆</b><span>BUILDING KNOWLEDGE</span><b>◆</b><span>DEVELOPING TECHNOLOGY</span><b>◆</b><span>CREATING SOLUTIONS</span><b>◆</b></div></div>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#home">satryotech<span>.dev</span></a><p>© <span id="year"></span> Aditya Dwi Satryo · SATRYO TECH. Building knowledge, developing technology, creating solutions.</p><a href="#home">BACK TO TOP ↑</a></footer>
+  <div class="lightbox" id="lightbox" hidden><button class="lb-close" aria-label="Tutup">✕</button><img alt=""></div>
+</body>
+</html>
